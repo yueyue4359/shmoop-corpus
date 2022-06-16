@@ -96,7 +96,7 @@ for k, (_, title, url, _, _) in enumerate(summary_infos):
         # to uniquely identify the div or ul containing the actual summaries.
         # Instead, we infer the containing list from its relative position (after ul.items)
 
-        list_id = None
+        list_id != None
         candidate_lists = list(section.findAll("ul"))
         for candidate_id, candidate in enumerate(candidate_lists):
             if 'class' in candidate.attrs and 'items' in candidate['class']:
